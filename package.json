@@ -1,0 +1,32 @@
+{
+  "name": "bonkbot",
+  "version": "0.0.1",
+  "description": "Um bot criado para bonkar as pessoas, feito puramente com o intuito de diversão entre os amigos, em comemoração ao primeiro de abril",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheeDouglasAM3/BonkBot.git"
+  },
+  "keywords": [
+    "bonkbot",
+    "bot",
+    "discord",
+    "discordjs",
+    "js",
+    "javascript",
+    "node",
+    "nodejs"
+  ],
+  "author": "Douglas Alves Marcelino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheeDouglasAM3/BonkBot/issues"
+  },
+  "homepage": "https://github.com/TheeDouglasAM3/BonkBot#readme",
+  "dependencies": {
+    "discord.js": "^12.1.1"
+  }
+}

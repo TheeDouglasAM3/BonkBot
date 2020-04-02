@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/TheeDouglasAM3/BonkBot#readme",
   "dependencies": {
-    "discord.js": "^12.1.1"
+    "discord.js": "^12.1.1",
+    "dotenv": "^8.2.0"
   }
 }

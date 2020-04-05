@@ -19,13 +19,8 @@ const prefix = botconfig.prefix;
 client.on("ready", () => {
     console.log(`Olá, ${client.user.username} estou online!`);
 
-    client.user.setPresence({
-        status: "online",
-        game: {
-            name: "Command: b!bonk <mention a user>",
-            type: "WATCHING"
-        }
-    }); 
+    client.user.setActivity("b!bonk <mention a user>", { type: "WATCHING" })
+  
 })
 
 client.on("message", async message => {
@@ -36,8 +31,9 @@ client.on("message", async message => {
 
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
+    const ownIdBot = client.user.id;
 
-    await cmdBonk.bonk(cmd, message, args);
+    await cmdBonk.bonk(cmd, message, args, ownIdBot);
 });
 
 client.login(process.env.TOKEN);
